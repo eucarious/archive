@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  color: rgb(112, 42, 7);
+}
+
+body {
+  background-color: rgb(234, 231, 229);
+}
+
+
+a:hover {
+  filter: saturate(200%);
+}
+
+.flex {
+  display: flex;
+}
+
+#return {
+  position: absolute;
+  left: 2rem;
+  top: 1.5rem;
+}
+
+.file {
+  padding: 0.3rem;
+  width: fit-content;
+}
