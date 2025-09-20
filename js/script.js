@@ -28,6 +28,13 @@ toggle_dark = function () {
   $("dark-mode").classList.toggle("dark")
   body.classList.toggle("dark")
 
+  if ( $("dark-mode").classList.contains("dark")) {
+    $("lamp").innerText = "and a";
+    $("brightness").innerText = "dark and dusty archive, manila folders strewn about, barely visible";
+  } else {
+    $("lamp").innerText = "and a flickering";
+    $("brightness").innerText = "dim and dusty archive, manila folders strewn about";
+  }
 }
 
 

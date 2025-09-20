@@ -6,10 +6,10 @@
 --border: oklch(0.6 0 35);
 --primary: oklch(0.4 0.1 35);
 --secondary: oklch(0.4 0.1 215);
---back: oklch(0.5 0.05 30);
---warning: oklch(0.5 0.05 100);
---success: oklch(0.5 0.05 160);
---info: oklch(0.5 0.05 260);
+--personal: oklch(0.5 0.10 30);
+--course: oklch(0.5 0.10 100);
+--write: oklch(0.5 0.10 160);
+--misc: oklch(0.5 0.10 260);
 
 
 --lamp: oklch(0.15 0 35);
@@ -21,12 +21,44 @@
 --border: oklch(0.4 0 35);
 --primary: oklch(0.76 0.1 35);
 --secondary: oklch(0.76 0.1 215);
---back: oklch(0.7 0.05 30);
---warning: oklch(0.7 0.05 100);
---success: oklch(0.7 0.05 160);
---info: oklch(0.7 0.05 260);
+--personal: oklch(0.7 0.05 30);
+--course: oklch(0.7 0.05 100);
+--write: oklch(0.7 0.05 160);
+--misc: oklch(0.7 0.05 260);
 }
 
+.personal {
+  color: var(--personal);
+}
+.course {
+  color: var(--course);
+}
+.write {
+  color: var(--write);
+}
+.misc {
+  color: var(--misc);
+}
+
+.personal:hover {
+  color: var(--personal);
+  filter: saturate(2.2);
+}
+
+.course:hover {
+  color: var(--course);
+  filter: saturate(4);
+} 
+
+.write:hover {
+  color: var(--write);
+  filter: saturate(2.8);
+}
+
+.misc:hover {
+  color: var(--misc);
+  filter: saturate(2.5);
+}
 
 
 *{
@@ -58,7 +90,9 @@ button:hover {
   color: var(--secondary);
 }
   
-
+footer {
+  margin-top: 2rem;
+}
 
 a {
   text-decoration: none;
@@ -97,6 +131,10 @@ h2, h3 {
 .file {
   padding: 0.3rem;
   width: fit-content;
+}
+
+.text {
+  color: var(--text);
 }
 
 .note {
